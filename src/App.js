@@ -13,34 +13,21 @@ import {
   Chip,
   Stack,
   Divider,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemIcon,
   Slider,
   Button,
-  IconButton,
   Tabs,
-  Tab,
-  useMediaQuery,
-  SvgIcon
+  Tab
 } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import animalsData from './data/animals.json';
+import funfactsData from './data/funfacts.json';
+import './App.css';
 import {
   Pets as PetsIcon,
   Straighten as SizeIcon,
   Palette as ColorIcon,
-  Info as InfoIcon,
-  RestartAlt as ResetIcon,
-  FilterList as FilterIcon,
-  Close as CloseIcon,
-  Restaurant as FoodIcon,
-  Psychology as BehaviorIcon,
-  Groups as SocialIcon,
-  Palette as AppearanceIcon
+  RestartAlt as ResetIcon
 } from '@mui/icons-material';
-import { styled } from '@mui/material/styles';
-import animalsData from './data/animals.json';
-import funfactsData from './data/funfacts.json';
 
 const StyledCard = styled(Card)(({ theme }) => ({
   position: 'relative',
@@ -227,15 +214,6 @@ const InfoLabel = styled(Box)(({ theme }) => ({
   visibility: 'visible',
   '& .MuiSvgIcon-root': {
     fontSize: '0.65rem'
-  }
-}));
-
-const FilterContainer = styled(Paper)(({ theme }) => ({
-  padding: theme.spacing(3),
-  marginBottom: theme.spacing(4),
-  borderRadius: theme.spacing(2),
-  '& .MuiDivider-root': {
-    margin: theme.spacing(3, 0)
   }
 }));
 
@@ -504,15 +482,12 @@ const AnimalCard = React.memo(({ animal, spottedAnimals, onSpottedToggle, onFlip
           alignItems: 'flex-end'
         }}>
           <InfoLabel>
-            <PetsIcon />
             {animal.type}
           </InfoLabel>
           <InfoLabel>
-            <SizeIcon />
             {animal.size} cm
           </InfoLabel>
         </Box>
-        <div className="sparkles" />
         <CardMedia
           component="img"
           image={`${process.env.PUBLIC_URL}/${animal.image}`}
@@ -604,13 +579,11 @@ function App() {
     return saved ? JSON.parse(saved) : {};
   });
   const [activeTab, setActiveTab] = useState(0);
-  const [isFilterExpanded, setIsFilterExpanded] = useState(false);
   const [isAnyCardFlipped, setIsAnyCardFlipped] = useState(false);
   const [filters, setFilters] = useState({
     type: [],
     color: []
   });
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   useEffect(() => {
     localStorage.setItem('spottedAnimals', JSON.stringify(spottedAnimals));
@@ -682,10 +655,6 @@ function App() {
       return size >= sizeRange[0] && size <= sizeRange[1];
     });
   }, [filters, sizeRange, activeTab, spottedAnimals]);
-
-  const handleImageError = (e) => {
-    e.target.src = `${process.env.PUBLIC_URL}/images/animals/placeholder.webp`;
-  };
 
   const handleTabChange = (event, newValue) => {
     setActiveTab(newValue);

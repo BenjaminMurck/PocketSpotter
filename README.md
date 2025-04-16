@@ -1,6 +1,6 @@
-# Madagaskar Wildlife Guide
+# PocketSpotter
 
-Een webapplicatie om dieren in Madagaskar te identificeren op basis van verschillende kenmerken zoals grootte, kleur, type en habitat.
+Een webapplicatie, door Benjamin Murck, om dieren in Madagaskar te identificeren op basis van verschillende kenmerken zoals type, grootte en kleur.
 
 ## Functies
 
@@ -33,9 +33,6 @@ Om nieuwe dieren toe te voegen, bewerk het bestand `src/data/animals.json`. Voeg
   "type": "[type dier]",
   "size": "[grootte]",
   "color": ["kleur1", "kleur2", ...],
-  "habitat": "[habitat]",
-  "diet": "[dieet]",
-  "description": "[beschrijving]",
   "image": "[URL naar afbeelding]"
 }
 ```
@@ -46,8 +43,6 @@ Om nieuwe dieren toe te voegen, bewerk het bestand `src/data/animals.json`. Voeg
    - Type (zoogdier, reptiel, etc.)
    - Grootte
    - Kleur
-   - Habitat
-   - Dieet
 
 2. Klik op een dier om meer details te zien
 
