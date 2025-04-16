@@ -40,8 +40,6 @@ import {
 } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
 import animalsData from './data/animals.json';
-import { alpha } from '@mui/material/styles';
-import { Virtuoso } from 'react-virtuoso';
 import funfactsData from './data/funfacts.json';
 
 const StyledCard = styled(Card)(({ theme }) => ({
@@ -454,37 +452,35 @@ const theme = createTheme({
 const AnimalCard = React.memo(({ animal, spottedAnimals, onSpottedToggle, onFlip }) => {
   const [showFlash, setShowFlash] = useState(false);
 
-  const handleClose = useCallback(() => {
-    const card = document.querySelector('.MuiCard-root.flipped');
-    if (card) {
-      card.classList.remove('flipped');
-      onFlip(false);
-      document.body.style.overflow = 'auto';
-    }
-  }, [onFlip]);
-
-  const handleSpottedClick = useCallback((e) => {
+  const handleSpottedClick = (e) => {
     e.stopPropagation();
     if (!spottedAnimals[animal.id]) {
       setShowFlash(true);
       setTimeout(() => setShowFlash(false), 500);
     }
     onSpottedToggle(animal.id);
-  }, [animal.id, onSpottedToggle, spottedAnimals]);
+  };
 
-  const handleCardClick = useCallback((e) => {
-    if (!e.target.closest('.MuiButton-root')) {
+  const handleCardClick = (e) => {
+    if (e && !e.target.closest('.MuiButton-root')) {
       const card = e.currentTarget;
       const shouldFlip = !card.classList.contains('flipped');
       card.classList.toggle('flipped');
       onFlip(shouldFlip);
       document.body.style.overflow = shouldFlip ? 'hidden' : 'auto';
+    } else {
+      const card = document.querySelector('.MuiCard-root.flipped');
+      if (card) {
+        card.classList.remove('flipped');
+        onFlip(false);
+        document.body.style.overflow = 'auto';
+      }
     }
-  }, [onFlip]);
+  };
 
-  const handleImageError = useCallback((e) => {
+  const handleImageError = (e) => {
     e.target.src = `${process.env.PUBLIC_URL}/images/animals/placeholder.webp`;
-  }, []);
+  };
 
   return (
     <StyledCard onClick={handleCardClick}>
@@ -593,7 +589,7 @@ const AnimalCard = React.memo(({ animal, spottedAnimals, onSpottedToggle, onFlip
           </Box>
         </CardContent>
       </Box>
-      <CardBack animal={animal} onClose={handleClose} />
+      <CardBack animal={animal} onClose={handleCardClick} />
     </StyledCard>
   );
 });
