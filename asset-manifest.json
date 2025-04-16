@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/PocketSpotter/static/js/main.842a957c.js",
+    "index.html": "/PocketSpotter/index.html",
+    "main.842a957c.js.map": "/PocketSpotter/static/js/main.842a957c.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.842a957c.js"
+  ]
+}
