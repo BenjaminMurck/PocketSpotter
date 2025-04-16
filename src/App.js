@@ -1027,17 +1027,6 @@ function App() {
                     <span className="percentage">%</span>
                   </Typography>
                 </Box>
-                <Box
-                  sx={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    pointerEvents: 'none',
-                    background: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.01) 10px, rgba(0,0,0,0.01) 20px)'
-                  }}
-                />
               </Box>
             </Box>
 
