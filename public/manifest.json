@@ -1,14 +1,14 @@
 {
-  "short_name": "PocketSpot",
-  "name": "PocketSpot Dierenapp Madagaskar",
+  "short_name": "PocketSpotter",
+  "name": "PocketSpotter Dierenapp Madagaskar",
   "icons": [
     {
-      "src": "/images/pocketspot-logo-192.png",
+      "src": "/PocketSpotter/images/pocketspot-logo-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/pocketspot-logo-512.png",
+      "src": "/PocketSpotter/images/pocketspot-logo-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

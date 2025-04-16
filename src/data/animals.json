@@ -7,7 +7,7 @@
       "size": 43,
       "color": ["gray", "white", "black"],
       "id": "lem001",
-      "image": "/images/animals/lemur-catta.webp"
+      "image": "images/animals/lemur-catta.webp"
     },
     {
       "name": "Common Brown Lemur",
@@ -16,7 +16,7 @@
       "size": 50,
       "color": ["brown", "gray"],
       "id": "lem002",
-      "image": "/images/animals/eulemur-fulvus.webp"
+      "image": "images/animals/eulemur-fulvus.webp"
     },
     {
       "name": "Red-fronted Lemur",
@@ -25,7 +25,7 @@
       "size": 50,
       "color": ["brown", "gray", "red"],
       "id": "lem003",
-      "image": "/images/animals/eulemur-rufifrons.webp"
+      "image": "images/animals/eulemur-rufifrons.webp"
     },
     {
       "name": "Red-bellied Lemur",
@@ -34,7 +34,7 @@
       "size": 37,
       "color": ["brown", "red", "white"],
       "id": "lem004",
-      "image": "/images/animals/eulemur-rubriventer.webp"
+      "image": "images/animals/eulemur-rubriventer.webp"
     },
     {
       "name": "Black Lemur",
@@ -43,7 +43,7 @@
       "size": 45,
       "color": ["black", "brown"],
       "id": "lem005",
-      "image": "/images/animals/eulemur-macaco.webp"
+      "image": "images/animals/eulemur-macaco.webp"
     },
     {
       "name": "Crowned Lemur",
@@ -52,7 +52,7 @@
       "size": 35,
       "color": ["gray", "orange", "brown"],
       "id": "lem006",
-      "image": "/images/animals/eulemur-coronatus.webp"
+      "image": "images/animals/eulemur-coronatus.webp"
     },
     {
       "name": "Verreaux's Sifaka",
@@ -61,7 +61,7 @@
       "size": 45,
       "color": ["white", "black"],
       "id": "lem007",
-      "image": "/images/animals/propithecus-verreauxi.webp"
+      "image": "images/animals/propithecus-verreauxi.webp"
     },
     {
       "name": "Coquerel's Sifaka",
@@ -70,7 +70,7 @@
       "size": 45,
       "color": ["white", "brown"],
       "id": "lem008",
-      "image": "/images/animals/propithecus-coquereli.webp"
+      "image": "images/animals/propithecus-coquereli.webp"
     },
     {
       "name": "Diademed Sifaka",
@@ -79,7 +79,7 @@
       "size": 50,
       "color": ["white", "yellow", "black"],
       "id": "lem009",
-      "image": "/images/animals/propithecus-diadema.webp"
+      "image": "images/animals/propithecus-diadema.webp"
     },
     {
       "name": "Indri",
@@ -88,7 +88,7 @@
       "size": 68,
       "color": ["black", "white"],
       "id": "lem010",
-      "image": "/images/animals/indri-indri.webp"
+      "image": "images/animals/indri-indri.webp"
     },
     {
       "name": "Aye-aye",
@@ -97,7 +97,7 @@
       "size": 39,
       "color": ["black", "brown", "white"],
       "id": "lem011",
-      "image": "/images/animals/daubentonia-madagascariensis.webp"
+      "image": "images/animals/daubentonia-madagascariensis.webp"
     },
     {
       "name": "Gray Mouse Lemur",
@@ -106,7 +106,7 @@
       "size": 13,
       "color": ["gray", "brown"],
       "id": "lem012",
-      "image": "/images/animals/microcebus-murinus.webp"
+      "image": "images/animals/microcebus-murinus.webp"
     },
     {
       "name": "Fat-tailed Dwarf Lemur",
@@ -115,7 +115,7 @@
       "size": 22,
       "color": ["gray", "brown"],
       "id": "lem013",
-      "image": "/images/animals/cheirogaleus-medius.webp"
+      "image": "images/animals/cheirogaleus-medius.webp"
     },
     {
       "name": "Eastern Lesser Bamboo Lemur",
@@ -124,7 +124,7 @@
       "size": 28,
       "color": ["gray", "brown"],
       "id": "lem014",
-      "image": "/images/animals/hapalemur-griseus.webp"
+      "image": "images/animals/hapalemur-griseus.webp"
     },
     {
       "name": "Black-and-white Ruffed Lemur",
@@ -133,7 +133,7 @@
       "size": 50,
       "color": ["black", "white"],
       "id": "lem015",
-      "image": "/images/animals/varecia-variegata.webp"
+      "image": "images/animals/varecia-variegata.webp"
     },
     {
       "name": "Red Ruffed Lemur",
@@ -142,7 +142,7 @@
       "size": 55,
       "color": ["red", "black", "white"],
       "id": "lem016",
-      "image": "/images/animals/varecia-rubra.webp"
+      "image": "images/animals/varecia-rubra.webp"
     },
     {
       "name": "Fossa",
@@ -151,7 +151,7 @@
       "size": 75,
       "color": ["brown", "gray"],
       "id": "mam001",
-      "image": "/images/animals/cryptoprocta-ferox.webp"
+      "image": "images/animals/cryptoprocta-ferox.webp"
     },
     {
       "name": "Lowland Streaked Tenrec",
@@ -160,7 +160,7 @@
       "size": 15,
       "color": ["black", "yellow"],
       "id": "mam002",
-      "image": "/images/animals/hemicentetes-semispinosus.webp"
+      "image": "images/animals/hemicentetes-semispinosus.webp"
     },
     {
       "name": "Common Tenrec",
@@ -169,7 +169,7 @@
       "size": 32,
       "color": ["brown", "black"],
       "id": "mam003",
-      "image": "/images/animals/tenrec-ecaudatus.webp"
+      "image": "images/animals/tenrec-ecaudatus.webp"
     },
     {
       "name": "Lesser Hedgehog Tenrec",
@@ -178,7 +178,7 @@
       "size": 15,
       "color": ["brown", "yellow"],
       "id": "mam004",
-      "image": "/images/animals/echinops-telfairi.webp"
+      "image": "images/animals/echinops-telfairi.webp"
     },
     {
       "name": "Greater Hedgehog Tenrec",
@@ -187,7 +187,7 @@
       "size": 19,
       "color": ["brown", "gray"],
       "id": "mam005",
-      "image": "/images/animals/setifer-setosus.webp"
+      "image": "images/animals/setifer-setosus.webp"
     },
     {
       "name": "Ring-tailed Mongoose",
@@ -196,7 +196,7 @@
       "size": 35,
       "color": ["red-brown", "black"],
       "id": "mam006",
-      "image": "/images/animals/galidia-elegans.webp"
+      "image": "images/animals/galidia-elegans.webp"
     },
     {
       "name": "Civet",
@@ -205,7 +205,7 @@
       "size": 43,
       "color": ["gray", "black", "white"],
       "id": "mam007",
-      "image": "/images/animals/fossa-fossana.webp"
+      "image": "images/animals/fossa-fossana.webp"
     },
     {
       "name": "Narrow-striped Mongoose",
@@ -214,7 +214,7 @@
       "size": 30,
       "color": ["brown", "black"],
       "id": "mam008",
-      "image": "/images/animals/mungotictis-decemlineata.webp"
+      "image": "images/animals/mungotictis-decemlineata.webp"
     },
     {
       "name": "Flying Fox",
@@ -223,7 +223,7 @@
       "size": 25,
       "color": ["brown", "black", "orange"],
       "id": "mam009",
-      "image": "/images/animals/pteropus-rufus.webp"
+      "image": "images/animals/pteropus-rufus.webp"
     },
     {
       "name": "Bushpig",
@@ -232,7 +232,7 @@
       "size": 120,
       "color": ["brown", "red", "black"],
       "id": "mam010",
-      "image": "/images/animals/potamochoerus-larvatus.webp"
+      "image": "images/animals/potamochoerus-larvatus.webp"
     },
     {
       "name": "Fody",
@@ -241,7 +241,7 @@
       "size": 13,
       "color": ["red", "brown", "black"],
       "id": "bird001",
-      "image": "/images/animals/foudia-madagascariensis.webp"
+      "image": "images/animals/foudia-madagascariensis.webp"
     },
     {
       "name": "Paradise Flycatcher",
@@ -250,7 +250,7 @@
       "size": 18,
       "color": ["brown", "black", "white"],
       "id": "bird002",
-      "image": "/images/animals/terpsiphone-mutata.webp"
+      "image": "images/animals/terpsiphone-mutata.webp"
     },
     {
       "name": "Magpie-Robin",
@@ -259,7 +259,7 @@
       "size": 18,
       "color": ["black", "white", "gray"],
       "id": "bird003",
-      "image": "/images/animals/copsychus-albospecularis.webp"
+      "image": "images/animals/copsychus-albospecularis.webp"
     },
     {
       "name": "Kingfisher",
@@ -268,7 +268,7 @@
       "size": 14,
       "color": ["blue", "orange", "white"],
       "id": "bird004",
-      "image": "/images/animals/corythornis-vintsioides.webp"
+      "image": "images/animals/corythornis-vintsioides.webp"
     },
     {
       "name": "Bulbul",
@@ -277,7 +277,7 @@
       "size": 22,
       "color": ["gray", "black", "orange"],
       "id": "bird005",
-      "image": "/images/animals/hypsipetes-madagascariensis.webp"
+      "image": "images/animals/hypsipetes-madagascariensis.webp"
     },
     {
       "name": "Crested Drongo",
@@ -286,7 +286,7 @@
       "size": 25,
       "color": ["black"],
       "id": "bird006",
-      "image": "/images/animals/dicrurus-forficatus.webp"
+      "image": "images/animals/dicrurus-forficatus.webp"
     },
     {
       "name": "Crested Coua",
@@ -295,7 +295,7 @@
       "size": 36,
       "color": ["gray", "green", "blue"],
       "id": "bird007",
-      "image": "/images/animals/coua-cristata.webp"
+      "image": "images/animals/coua-cristata.webp"
     },
     {
       "name": "Blue Coua",
@@ -304,7 +304,7 @@
       "size": 44,
       "color": ["blue", "purple"],
       "id": "bird008",
-      "image": "/images/animals/coua-caerulea.webp"
+      "image": "images/animals/coua-caerulea.webp"
     },
     {
       "name": "Red-capped Coua",
@@ -313,7 +313,7 @@
       "size": 35,
       "color": ["brown", "green", "red"],
       "id": "bird009",
-      "image": "/images/animals/coua-ruficeps.webp"
+      "image": "images/animals/coua-ruficeps.webp"
     },
     {
       "name": "Cuckoo Roller",
@@ -322,7 +322,7 @@
       "size": 40,
       "color": ["green", "gray", "brown"],
       "id": "bird010",
-      "image": "/images/animals/leptosomus-discolor.webp"
+      "image": "images/animals/leptosomus-discolor.webp"
     },
     {
       "name": "Long-eared Owl",
@@ -331,7 +331,7 @@
       "size": 35,
       "color": ["brown", "white", "black"],
       "id": "bird011",
-      "image": "/images/animals/asio-madagascariensis.webp"
+      "image": "images/animals/asio-madagascariensis.webp"
     },
     {
       "name": "Kestrel",
@@ -340,7 +340,7 @@
       "size": 30,
       "color": ["brown", "gray", "black"],
       "id": "bird012",
-      "image": "/images/animals/falco-newtoni.webp"
+      "image": "images/animals/falco-newtoni.webp"
     },
     {
       "name": "Harrier-Hawk",
@@ -349,7 +349,7 @@
       "size": 60,
       "color": ["gray", "black", "white"],
       "id": "bird013",
-      "image": "/images/animals/polyboroides-radiatus.webp"
+      "image": "images/animals/polyboroides-radiatus.webp"
     },
     {
       "name": "Buzzard",
@@ -358,7 +358,7 @@
       "size": 50,
       "color": ["brown", "white", "black"],
       "id": "bird014",
-      "image": "/images/animals/buteo-brachypterus.webp"
+      "image": "images/animals/buteo-brachypterus.webp"
     },
     {
       "name": "Sickle-billed Vanga",
@@ -367,7 +367,7 @@
       "size": 32,
       "color": ["black", "white"],
       "id": "bird015",
-      "image": "/images/animals/falculea-palliata.webp"
+      "image": "images/animals/falculea-palliata.webp"
     },
     {
       "name": "Blue Vanga",
@@ -376,7 +376,7 @@
       "size": 20,
       "color": ["blue", "white", "black"],
       "id": "bird016",
-      "image": "/images/animals/cyanolanius-madagascarinus.webp"
+      "image": "images/animals/cyanolanius-madagascarinus.webp"
     },
     {
       "name": "Helmet Vanga",
@@ -385,7 +385,7 @@
       "size": 28,
       "color": ["black", "orange", "blue"],
       "id": "bird017",
-      "image": "/images/animals/euryceros-prevostii.webp"
+      "image": "images/animals/euryceros-prevostii.webp"
     },
     {
       "name": "White-throated Rail",
@@ -394,7 +394,7 @@
       "size": 30,
       "color": ["brown", "gray", "white"],
       "id": "bird018",
-      "image": "/images/animals/dryolimnas-cuvieri.webp"
+      "image": "images/animals/dryolimnas-cuvieri.webp"
     },
     {
       "name": "Hamerkop",
@@ -403,7 +403,7 @@
       "size": 56,
       "color": ["brown"],
       "id": "bird019",
-      "image": "/images/animals/scopus-umbretta.webp"
+      "image": "images/animals/scopus-umbretta.webp"
     },
     {
       "name": "White-faced Whistling Duck",
@@ -412,7 +412,7 @@
       "size": 38,
       "color": ["brown", "white", "black"],
       "id": "bird020",
-      "image": "/images/animals/dendrocygna-viduata.webp"
+      "image": "images/animals/dendrocygna-viduata.webp"
     },
     {
       "name": "Lesser Vasa Parrot",
@@ -421,7 +421,7 @@
       "size": 35,
       "color": ["black", "gray"],
       "id": "bird021",
-      "image": "/images/animals/coracopsis-nigra.webp"
+      "image": "images/animals/coracopsis-nigra.webp"
     },
     {
       "name": "Grey-headed Lovebird",
@@ -430,7 +430,7 @@
       "size": 13,
       "color": ["green", "gray", "white"],
       "id": "bird022",
-      "image": "/images/animals/agapornis-canus.webp"
+      "image": "images/animals/agapornis-canus.webp"
     },
     {
       "name": "Coucal",
@@ -439,7 +439,7 @@
       "size": 40,
       "color": ["black", "brown", "white"],
       "id": "bird023",
-      "image": "/images/animals/centropus-toulou.webp"
+      "image": "images/animals/centropus-toulou.webp"
     },
     {
       "name": "Hoopoe",
@@ -448,7 +448,7 @@
       "size": 32,
       "color": ["orange", "black", "white"],
       "id": "bird024",
-      "image": "/images/animals/upupa-marginata.webp"
+      "image": "images/animals/upupa-marginata.webp"
     },
     {
       "name": "Bee-eater",
@@ -457,7 +457,7 @@
       "size": 25,
       "color": ["green", "yellow", "black"],
       "id": "bird025",
-      "image": "/images/animals/merops-superciliosus.webp"
+      "image": "images/animals/merops-superciliosus.webp"
     },
     {
       "name": "Common Myna",
@@ -466,7 +466,7 @@
       "size": 25,
       "color": ["brown", "black", "yellow"],
       "id": "bird026",
-      "image": "/images/animals/acridotheres-tristis.webp"
+      "image": "images/animals/acridotheres-tristis.webp"
     },
     {
       "name": "Pied Crow",
@@ -475,7 +475,7 @@
       "size": 46,
       "color": ["black", "white"],
       "id": "bird027",
-      "image": "/images/animals/corvus-albus.webp"
+      "image": "images/animals/corvus-albus.webp"
     },
     {
       "name": "Souimanga Sunbird",
@@ -484,7 +484,7 @@
       "size": 12,
       "color": ["green", "yellow", "red"],
       "id": "bird028",
-      "image": "/images/animals/cinnyris-sovimanga.webp"
+      "image": "images/animals/cinnyris-sovimanga.webp"
     },
     {
       "name": "Mannikin",
@@ -493,7 +493,7 @@
       "size": 10,
       "color": ["brown", "black", "white"],
       "id": "bird029",
-      "image": "/images/animals/lonchura-nana.webp"
+      "image": "images/animals/lonchura-nana.webp"
     },
     {
       "name": "White-eye",
@@ -502,7 +502,7 @@
       "size": 12,
       "color": ["green", "yellow", "white"],
       "id": "bird030",
-      "image": "/images/animals/zosterops-maderaspatanus.webp"
+      "image": "images/animals/zosterops-maderaspatanus.webp"
     },
     {
       "name": "Panther Chameleon",
@@ -511,7 +511,7 @@
       "size": 45,
       "color": ["green", "red", "blue", "yellow"],
       "id": "rep001",
-      "image": "/images/animals/furcifer-pardalis.webp"
+      "image": "images/animals/furcifer-pardalis.webp"
     },
     {
       "name": "Oustalet's Chameleon",
@@ -520,7 +520,7 @@
       "size": 60,
       "color": ["brown", "gray", "green"],
       "id": "rep002",
-      "image": "/images/animals/furcifer-oustaleti.webp"
+      "image": "images/animals/furcifer-oustaleti.webp"
     },
     {
       "name": "Parson's Chameleon",
@@ -529,7 +529,7 @@
       "size": 60,
       "color": ["green", "yellow"],
       "id": "rep003",
-      "image": "/images/animals/calumma-parsonii.webp"
+      "image": "images/animals/calumma-parsonii.webp"
     },
     {
       "name": "Carpet Chameleon",
@@ -538,7 +538,7 @@
       "size": 25,
       "color": ["green", "orange", "white"],
       "id": "rep004",
-      "image": "/images/animals/furcifer-lateralis.webp"
+      "image": "images/animals/furcifer-lateralis.webp"
     },
     {
       "name": "Labord's Chameleon",
@@ -547,7 +547,7 @@
       "size": 28,
       "color": ["green", "yellow", "brown"],
       "id": "rep005",
-      "image": "/images/animals/furcifer-labordi.webp"
+      "image": "images/animals/furcifer-labordi.webp"
     },
     {
       "name": "Satanic Leaf-tailed Gecko",
@@ -556,7 +556,7 @@
       "size": 10,
       "color": ["brown", "gray", "orange"],
       "id": "rep006",
-      "image": "/images/animals/uroplatus-phantasticus.webp"
+      "image": "images/animals/uroplatus-phantasticus.webp"
     },
     {
       "name": "Giant Leaf-tailed Gecko",
@@ -565,7 +565,7 @@
       "size": 30,
       "color": ["brown", "gray", "green"],
       "id": "rep007",
-      "image": "/images/animals/uroplatus-fimbriatus.webp"
+      "image": "images/animals/uroplatus-fimbriatus.webp"
     },
     {
       "name": "Giant Day Gecko",
@@ -574,7 +574,7 @@
       "size": 25,
       "color": ["green", "red"],
       "id": "rep008",
-      "image": "/images/animals/phelsuma-grandis.webp"
+      "image": "images/animals/phelsuma-grandis.webp"
     },
     {
       "name": "Gold Dust Day Gecko",
@@ -583,7 +583,7 @@
       "size": 12,
       "color": ["green", "yellow", "red"],
       "id": "rep009",
-      "image": "/images/animals/phelsuma-laticauda.webp"
+      "image": "images/animals/phelsuma-laticauda.webp"
     },
     {
       "name": "Standing's Day Gecko",
@@ -592,7 +592,7 @@
       "size": 28,
       "color": ["green", "gray", "blue"],
       "id": "rep010",
-      "image": "/images/animals/phelsuma-standingi.webp"
+      "image": "images/animals/phelsuma-standingi.webp"
     },
     {
       "name": "Ground Boa",
@@ -601,7 +601,7 @@
       "size": 200,
       "color": ["brown", "gray", "black"],
       "id": "rep011",
-      "image": "/images/animals/acrantophis-madagascariensis.webp"
+      "image": "images/animals/acrantophis-madagascariensis.webp"
     },
     {
       "name": "Tree Boa",
@@ -610,7 +610,7 @@
       "size": 150,
       "color": ["green", "brown"],
       "id": "rep012",
-      "image": "/images/animals/sanzinia-madagascariensis.webp"
+      "image": "images/animals/sanzinia-madagascariensis.webp"
     },
     {
       "name": "Dumeril's Boa",
@@ -619,7 +619,7 @@
       "size": 200,
       "color": ["brown", "black"],
       "id": "rep013",
-      "image": "/images/animals/acrantophis-dumerili.webp"
+      "image": "images/animals/acrantophis-dumerili.webp"
     },
     {
       "name": "Hognose Snake",
@@ -628,7 +628,7 @@
       "size": 100,
       "color": ["brown", "yellow", "black"],
       "id": "rep014",
-      "image": "/images/animals/leioheterodon-madagascariensis.webp"
+      "image": "images/animals/leioheterodon-madagascariensis.webp"
     },
     {
       "name": "Leaf-nosed Snake",
@@ -637,7 +637,7 @@
       "size": 90,
       "color": ["brown", "gray"],
       "id": "rep015",
-      "image": "/images/animals/langaha-madagascariensis.webp"
+      "image": "images/animals/langaha-madagascariensis.webp"
     },
     {
       "name": "Nile Crocodile",
@@ -646,7 +646,7 @@
       "size": 400,
       "color": ["green", "gray", "brown"],
       "id": "rep016",
-      "image": "/images/animals/crocodylus-niloticus.webp"
+      "image": "images/animals/crocodylus-niloticus.webp"
     },
     {
       "name": "Three-eyed Lizard",
@@ -655,7 +655,7 @@
       "size": 25,
       "color": ["brown", "gray"],
       "id": "rep017",
-      "image": "/images/animals/chalarodon-madagascariensis.webp"
+      "image": "images/animals/chalarodon-madagascariensis.webp"
     },
     {
       "name": "Spiny-tailed Iguana",
@@ -664,7 +664,7 @@
       "size": 30,
       "color": ["gray", "brown"],
       "id": "rep018",
-      "image": "/images/animals/oplurus-cuvieri.webp"
+      "image": "images/animals/oplurus-cuvieri.webp"
     },
     {
       "name": "Radiated Tortoise",
@@ -673,7 +673,7 @@
       "size": 40,
       "color": ["black", "yellow"],
       "id": "rep019",
-      "image": "/images/animals/astrochelys-radiata.webp"
+      "image": "images/animals/astrochelys-radiata.webp"
     },
     {
       "name": "Green Sea Turtle",
@@ -682,7 +682,7 @@
       "size": 120,
       "color": ["green", "brown"],
       "id": "rep020",
-      "image": "/images/animals/chelonia-mydas.webp"
+      "image": "images/animals/chelonia-mydas.webp"
     },
     {
       "name": "Tomato Frog",
@@ -691,7 +691,7 @@
       "size": 10,
       "color": ["red", "orange", "yellow"],
       "id": "rep021",
-      "image": "/images/animals/dyscophus-antongilii.webp"
+      "image": "images/animals/dyscophus-antongilii.webp"
     },
     {
       "name": "Painted Mantella",
@@ -700,7 +700,7 @@
       "size": 3,
       "color": ["green", "yellow", "black"],
       "id": "rep022",
-      "image": "/images/animals/mantella-madagascariensis.webp"
+      "image": "images/animals/mantella-madagascariensis.webp"
     },
     {
       "name": "Golden Mantella",
@@ -709,7 +709,7 @@
       "size": 2,
       "color": ["orange", "yellow"],
       "id": "rep023",
-      "image": "/images/animals/mantella-aurantiaca.webp"
+      "image": "images/animals/mantella-aurantiaca.webp"
     },
     {
       "name": "Green Bright-eyed Frog",
@@ -718,7 +718,7 @@
       "size": 8,
       "color": ["green", "yellow"],
       "id": "rep024",
-      "image": "/images/animals/boophis-viridis.webp"
+      "image": "images/animals/boophis-viridis.webp"
     },
     {
       "name": "Comet Moth",
@@ -727,7 +727,7 @@
       "size": 15,
       "color": ["yellow", "red", "brown"],
       "id": "ins001",
-      "image": "/images/animals/argema-mittrei.webp"
+      "image": "images/animals/argema-mittrei.webp"
     },
     {
       "name": "Sunset Moth",
@@ -736,7 +736,7 @@
       "size": 10,
       "color": ["green", "black", "red"],
       "id": "ins002",
-      "image": "/images/animals/chrysiridia-rhipheus.webp"
+      "image": "images/animals/chrysiridia-rhipheus.webp"
     },
     {
       "name": "Giraffe Weevil",
@@ -745,7 +745,7 @@
       "size": 3,
       "color": ["red", "black"],
       "id": "ins003",
-      "image": "/images/animals/trachelophorus-giraffa.webp"
+      "image": "images/animals/trachelophorus-giraffa.webp"
     },
     {
       "name": "Hissing Cockroach",
@@ -754,7 +754,7 @@
       "size": 6,
       "color": ["brown", "black"],
       "id": "ins004",
-      "image": "/images/animals/gromphadorhina-portentosa.webp"
+      "image": "images/animals/gromphadorhina-portentosa.webp"
     },
     {
       "name": "Flatid Leaf Bug",
@@ -763,7 +763,7 @@
       "size": 1,
       "color": ["white", "pink"],
       "id": "ins005",
-      "image": "/images/animals/phromnia-rosea.webp"
+      "image": "images/animals/phromnia-rosea.webp"
     },
     {
       "name": "Migratory Locust",
@@ -772,7 +772,7 @@
       "size": 5,
       "color": ["brown", "yellow"],
       "id": "ins006",
-      "image": "/images/animals/locusta-migratoria-capito.webp"
+      "image": "images/animals/locusta-migratoria-capito.webp"
     },
     {
       "name": "Giant Stick Insect",
@@ -781,7 +781,7 @@
       "size": 15,
       "color": ["blue", "red", "black"],
       "id": "ins007",
-      "image": "/images/animals/achrioptera-fallax.webp"
+      "image": "images/animals/achrioptera-fallax.webp"
     },
     {
       "name": "Giant Swallowtail",
@@ -790,7 +790,7 @@
       "size": 14,
       "color": ["black", "white", "red"],
       "id": "ins008",
-      "image": "/images/animals/pharmacophagus-antenor.webp"
+      "image": "images/animals/pharmacophagus-antenor.webp"
     },
     {
       "name": "Diadem",
@@ -799,7 +799,7 @@
       "size": 9,
       "color": ["orange", "black", "white"],
       "id": "ins009",
-      "image": "/images/animals/hypolimnas-dexithea.webp"
+      "image": "images/animals/hypolimnas-dexithea.webp"
     },
     {
       "name": "Jewel Beetle",
@@ -808,7 +808,7 @@
       "size": 4,
       "color": ["green", "blue", "purple"],
       "id": "ins010",
-      "image": "/images/animals/polybothris-sumptuosa.webp"
+      "image": "images/animals/polybothris-sumptuosa.webp"
     },
     {
       "name": "Ghost Mantis",
@@ -817,7 +817,7 @@
       "size": 5,
       "color": ["brown", "green"],
       "id": "ins011",
-      "image": "/images/animals/phyllocrania-paradoxa.webp"
+      "image": "images/animals/phyllocrania-paradoxa.webp"
     },
     {
       "name": "African Monarch",
@@ -826,7 +826,7 @@
       "size": 8,
       "color": ["orange", "black", "white"],
       "id": "ins012",
-      "image": "/images/animals/danaus-chrysippus.webp"
+      "image": "images/animals/danaus-chrysippus.webp"
     },
     {
       "name": "Weaver Ant",
@@ -835,7 +835,7 @@
       "size": 1,
       "color": ["orange", "green"],
       "id": "ins013",
-      "image": "/images/animals/oecophylla-longinoda.webp"
+      "image": "images/animals/oecophylla-longinoda.webp"
     },
     {
       "name": "Lemur Skimmer",
@@ -844,7 +844,7 @@
       "size": 4,
       "color": ["blue", "black", "brown"],
       "id": "ins014",
-      "image": "/images/animals/orthetrum-lemur.webp"
+      "image": "images/animals/orthetrum-lemur.webp"
     },
     {
       "name": "Dracula Ant",
@@ -853,7 +853,7 @@
       "size": 0.5,
       "color": ["orange", "brown"],
       "id": "ins015",
-      "image": "/images/animals/adetomyrma-venatrix.webp"
+      "image": "images/animals/adetomyrma-venatrix.webp"
     },
     {
       "name": "Emperor Moth",
@@ -862,7 +862,7 @@
       "size": 15,
       "color": ["brown", "yellow", "orange"],
       "id": "ins016",
-      "image": "/images/animals/bunaea-aslauga.webp"
+      "image": "images/animals/bunaea-aslauga.webp"
     },
     {
       "name": "Giant Grasshopper",
@@ -871,16 +871,16 @@
       "size": 10,
       "color": ["green", "black", "yellow"],
       "id": "ins017",
-      "image": "/images/animals/phymateus-saxosus.webp"
+      "image": "images/animals/phymateus-saxosus.webp"
     },
     {
       "name": "Flower Beetle",
-      "scientificName": "Pygora lenocinia",
+      "scientificName": "Euchroea coelestis",
       "type": "insect",
-      "size": 1.5,
-      "color": ["green", "purple"],
+      "size": 2.5,
+      "color": ["green", "black", "yellow"],
       "id": "ins018",
-      "image": "/images/animals/pygora-lenocinia.webp"
+      "image": "images/animals/euchroea-coelestis.webp"
     },
     {
       "name": "Conehead Katydid",
@@ -889,7 +889,7 @@
       "size": 6,
       "color": ["green", "brown"],
       "id": "ins019",
-      "image": "/images/animals/malagasopus-desutterae.webp"
+      "image": "images/animals/malagasopus-desutterae.webp"
     },
     {
       "name": "Cicada",
@@ -898,7 +898,7 @@
       "size": 3,
       "color": ["brown", "green"],
       "id": "ins020",
-      "image": "/images/animals/yanga-andriana.webp"
+      "image": "images/animals/yanga-andriana.webp"
     }
   ]  
 } 
