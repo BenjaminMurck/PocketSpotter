@@ -20,7 +20,6 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import animalsData from './data/animals.json';
-import funfactsData from './data/funfacts.json';
 import './App.css';
 import {
   Pets as PetsIcon,
@@ -39,11 +38,52 @@ const StyledCard = styled(Card)(({ theme }) => ({
   aspectRatio: '1/1',
   cursor: 'pointer',
 
+  '&.spotted': {
+    '&::before': {
+      content: '""',
+      position: 'absolute',
+      inset: 0,
+      background: 'linear-gradient(135deg, rgba(255,215,0,0.1) 0%, rgba(255,215,0,0.05) 100%)',
+      zIndex: 1,
+      animation: 'pulse 2s infinite',
+    },
+    '&::after': {
+      content: '""',
+      position: 'absolute',
+      inset: 0,
+      border: '2px solid rgba(255,215,0,0.3)',
+      borderRadius: '16px',
+      boxShadow: '0 0 10px rgba(255,215,0,0.2)',
+      zIndex: 1,
+    },
+    '& .MuiCardMedia-root': {
+      '&::after': {
+        content: '""',
+        position: 'absolute',
+        inset: 0,
+        background: 'linear-gradient(135deg, rgba(255,215,0,0.1) 0%, rgba(255,215,0,0) 100%)',
+        mixBlendMode: 'overlay',
+      }
+    }
+  },
+
+  '@keyframes pulse': {
+    '0%': {
+      opacity: 0.5,
+    },
+    '50%': {
+      opacity: 0.8,
+    },
+    '100%': {
+      opacity: 0.5,
+    }
+  },
+
   '& .spot-button': {
     position: 'absolute',
     top: theme.spacing(1),
     left: theme.spacing(1),
-    zIndex: 3,
+    zIndex: 1002,
     minWidth: 'auto',
     minHeight: '24px',
     padding: '4px 8px',
@@ -63,7 +103,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
       transform: 'none'
     },
     '&.spotted': {
-      background: 'linear-gradient(45deg, #ffd700, #ffed4a)',
+      background: 'linear-gradient(135deg, #ffd700 0%, #ffed4a 100%)',
       color: '#000',
       border: 'none',
       boxShadow: `
@@ -73,7 +113,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
         0 0 6px rgba(255,215,0,0.4)
       `,
       '&:hover': {
-        background: 'linear-gradient(45deg, #ffd700, #ffed4a)',
+        background: 'linear-gradient(135deg, #ffd700 0%, #ffed4a 100%)',
         boxShadow: `
           0 2px 4px rgba(0,0,0,0.2),
           inset 0 -1px 2px rgba(0,0,0,0.1),
@@ -264,7 +304,7 @@ const FilterSection = ({ icon: Icon, category, values, selectedValues, onValueCl
 );
 
 const CardBack = ({ animal, onClose }) => {
-  const facts = funfactsData.funfacts[animal.id]?.facts || [];
+  const facts = animal.funfact || [];
 
   const handleClick = (e) => {
     e.stopPropagation();
@@ -331,7 +371,7 @@ const CardBack = ({ animal, onClose }) => {
                   textShadow: '1px 1px 2px rgba(0,0,0,0.1)'
                 }}
               >
-                {fact.fact}
+                {fact}
               </Typography>
               {index < facts.length - 1 && (
                 <Divider sx={{ 
@@ -427,7 +467,7 @@ const theme = createTheme({
   },
 });
 
-const AnimalCard = React.memo(({ animal, spottedAnimals, onSpottedToggle, onFlip }) => {
+const AnimalCard = React.memo(({ animal, spottedAnimals, onSpottedToggle }) => {
   const [showFlash, setShowFlash] = useState(false);
 
   const handleSpottedClick = (e) => {
@@ -439,38 +479,41 @@ const AnimalCard = React.memo(({ animal, spottedAnimals, onSpottedToggle, onFlip
     onSpottedToggle(animal.id);
   };
 
-  const handleCardClick = (e) => {
-    if (e && !e.target.closest('.MuiButton-root')) {
-      const card = e.currentTarget;
-      const shouldFlip = !card.classList.contains('flipped');
-      card.classList.toggle('flipped');
-      onFlip(shouldFlip);
-      document.body.style.overflow = shouldFlip ? 'hidden' : 'auto';
-    } else {
-      const card = document.querySelector('.MuiCard-root.flipped');
-      if (card) {
-        card.classList.remove('flipped');
-        onFlip(false);
-        document.body.style.overflow = 'auto';
-      }
-    }
-  };
-
   const handleImageError = (e) => {
     e.target.src = `${process.env.PUBLIC_URL}/images/animals/placeholder.webp`;
   };
 
   return (
-    <StyledCard onClick={handleCardClick}>
+    <StyledCard className={spottedAnimals[animal.id] ? 'spotted' : ''}>
       {showFlash && <div className="camera-flash" />}
+      <Button
+        className={`spot-button ${spottedAnimals[animal.id]?.spotted ? 'spotted' : ''}`}
+        onClick={handleSpottedClick}
+        size="small"
+      >
+        {spottedAnimals[animal.id]?.spotted ? (
+          <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <span style={{ 
+              textShadow: '0 1px 1px rgba(255,255,255,0.5), 0 -1px 1px rgba(0,0,0,0.3)',
+              letterSpacing: '0.5px'
+            }}>Gespot</span>
+            <Typography variant="caption" sx={{ 
+              fontSize: '0.5rem',
+              opacity: 0.8,
+              mt: 0.1,
+              fontStyle: 'italic',
+              textShadow: '0 1px 1px rgba(255,255,255,0.5), 0 -1px 1px rgba(0,0,0,0.3)',
+              letterSpacing: '0.5px'
+            }}>
+              op {new Date(spottedAnimals[animal.id].date).toLocaleDateString('nl-NL', {
+                day: 'numeric',
+                month: 'short'
+              })}
+            </Typography>
+          </Box>
+        ) : 'Niet gespot'}
+      </Button>
       <Box className={`card-front ${spottedAnimals[animal.id] ? 'spotted' : ''}`}>
-        <Button
-          className={`spot-button ${spottedAnimals[animal.id] ? 'spotted' : ''}`}
-          onClick={handleSpottedClick}
-          size="small"
-        >
-          {spottedAnimals[animal.id] ? 'Gespot!' : 'Niet gespot'}
-        </Button>
         <Box sx={{ 
           position: 'absolute', 
           top: theme.spacing(1), 
@@ -564,7 +607,6 @@ const AnimalCard = React.memo(({ animal, spottedAnimals, onSpottedToggle, onFlip
           </Box>
         </CardContent>
       </Box>
-      <CardBack animal={animal} onClose={handleCardClick} />
     </StyledCard>
   );
 });
@@ -579,7 +621,6 @@ function App() {
     return saved ? JSON.parse(saved) : {};
   });
   const [activeTab, setActiveTab] = useState(0);
-  const [isAnyCardFlipped, setIsAnyCardFlipped] = useState(false);
   const [filters, setFilters] = useState({
     type: [],
     color: []
@@ -590,10 +631,18 @@ function App() {
   }, [spottedAnimals]);
 
   const handleSpottedToggle = useCallback((id) => {
-    setSpottedAnimals(prev => ({
-      ...prev,
-      [id]: !prev[id]
-    }));
+    setSpottedAnimals(prev => {
+      const newState = { ...prev };
+      if (newState[id]?.spotted) {
+        delete newState[id];
+      } else {
+        newState[id] = {
+          spotted: true,
+          date: new Date().toISOString().split('T')[0] // Format: YYYY-MM-DD
+        };
+      }
+      return newState;
+    });
   }, []);
 
   const uniqueValues = (key) => {
@@ -628,8 +677,8 @@ function App() {
 
   // Memoize filtered animals
   const filteredAnimals = useMemo(() => {
-    return animalsData.animals.filter(animal => {
-      if (activeTab === 1 && !spottedAnimals[animal.id]) {
+    let filtered = animalsData.animals.filter(animal => {
+      if (activeTab === 1 && !spottedAnimals[animal.id]?.spotted) {
         return false;
       }
 
@@ -654,6 +703,18 @@ function App() {
       
       return size >= sizeRange[0] && size <= sizeRange[1];
     });
+
+    // Sort animals based on tab
+    if (activeTab === 1) {
+      // On "Gespot" tab: sort by date (most recent first)
+      filtered.sort((a, b) => {
+        const dateA = new Date(spottedAnimals[a.id]?.date || 0);
+        const dateB = new Date(spottedAnimals[b.id]?.date || 0);
+        return dateB - dateA;
+      });
+    }
+
+    return filtered;
   }, [filters, sizeRange, activeTab, spottedAnimals]);
 
   const handleTabChange = (event, newValue) => {
@@ -667,10 +728,6 @@ function App() {
     });
     setSizeRange([minSize, maxSize]);
   };
-
-  const handleCardFlip = useCallback((shouldFlip) => {
-    setIsAnyCardFlipped(shouldFlip);
-  }, []);
 
   return (
     <ThemeProvider theme={theme}>
@@ -695,35 +752,11 @@ function App() {
           }
         }}
       >
-        <Box
-          className="overlay"
-          sx={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: 'rgba(0,0,0,0.7)',
-            opacity: 0,
-            visibility: 'hidden',
-            transition: 'all 0.3s ease-in-out',
-            pointerEvents: 'none',
-            zIndex: 998,
-          }}
-          onClick={() => {
-            const flippedCard = document.querySelector('.MuiCard-root.flipped');
-            if (flippedCard) {
-              flippedCard.classList.remove('flipped');
-              document.body.style.overflow = 'auto';
-            }
-          }}
-        />
         <Container 
           maxWidth="lg" 
           sx={{
             px: { xs: 0, sm: 3 },
-            position: 'relative',
-            zIndex: isAnyCardFlipped ? 997 : 'auto'
+            position: 'relative'
           }}
         >
           <Box 
@@ -1200,7 +1233,6 @@ function App() {
                       animal={animal}
                       spottedAnimals={spottedAnimals}
                       onSpottedToggle={handleSpottedToggle}
-                      onFlip={handleCardFlip}
                     />
                   </Grid>
                 ))}
@@ -1213,29 +1245,8 @@ function App() {
             mt: 1.25,
             py: 3,
             px: { xs: 1.25, sm: 0 },
-            background: 'linear-gradient(180deg, rgba(46,125,50,0.1) 0%, rgba(46,125,50,0) 100%)',
             position: 'relative',
-            overflow: 'hidden',
-            '&::after': {
-              content: '""',
-              position: 'absolute',
-              top: 0,
-              left: '50%',
-              transform: 'translateX(-50%)',
-              width: '100%',
-              height: '1px',
-              background: 'rgba(0,0,0,0.05)'
-            },
-            '&::before': {
-              content: '""',
-              position: 'absolute',
-              bottom: 0,
-              left: 0,
-              right: 0,
-              height: '60%',
-              background: 'linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%)',
-              borderRadius: 'inherit'
-            }
+            overflow: 'hidden'
           }}
         >
           <Container maxWidth="lg" sx={{ px: { xs: 0, sm: 3 } }}>

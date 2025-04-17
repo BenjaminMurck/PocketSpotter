@@ -7,11 +7,11 @@ Een webapplicatie, door Benjamin Murck, om dieren in Madagaskar te identificeren
 - Filter dieren op basis van verschillende kenmerken
 - Bekijk gedetailleerde informatie over elk dier
 - Responsief ontwerp voor gebruik op mobiele apparaten
-- Offline beschikbaar (na installatie)
+- Markeer dieren als "gespot" voor persoonlijke tracking
 
-## Installatie
+## Project opzetten
 
-1. Clone deze repository
+1. Open het project in je favoriete code-editor
 2. Installeer de dependencies:
 ```bash
 npm install
@@ -33,7 +33,7 @@ Om nieuwe dieren toe te voegen, bewerk het bestand `src/data/animals.json`. Voeg
   "type": "[type dier]",
   "size": "[grootte]",
   "color": ["kleur1", "kleur2", ...],
-  "image": "[URL naar afbeelding]"
+  "image": "images/animals/[bestandsnaam].webp"
 }
 ```
 
@@ -45,9 +45,15 @@ Om nieuwe dieren toe te voegen, bewerk het bestand `src/data/animals.json`. Voeg
    - Kleur
 
 2. Klik op een dier om meer details te zien
+3. Gebruik de "Spot" knop om dieren te markeren als gespot
 
 ## Technologieën
 
-- React
-- Material-UI
+- React 18.2.0
+- Material-UI 5.17.1
+  - @mui/material
+  - @mui/icons-material
+  - @mui/system
+- Emotion voor styling
+- React Virtuoso voor efficiënte lijstweergave
 - JSON voor dataopslag 
