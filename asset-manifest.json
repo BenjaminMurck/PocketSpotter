@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/PocketSpotter/static/js/main.842a957c.js",
+    "main.css": "/PocketSpotter/static/css/main.85f877ee.css",
+    "main.js": "/PocketSpotter/static/js/main.9fa2bdfd.js",
     "index.html": "/PocketSpotter/index.html",
-    "main.842a957c.js.map": "/PocketSpotter/static/js/main.842a957c.js.map"
+    "main.85f877ee.css.map": "/PocketSpotter/static/css/main.85f877ee.css.map",
+    "main.9fa2bdfd.js.map": "/PocketSpotter/static/js/main.9fa2bdfd.js.map"
   },
   "entrypoints": [
-    "static/js/main.842a957c.js"
+    "static/css/main.85f877ee.css",
+    "static/js/main.9fa2bdfd.js"
   ]
 }
